@@ -50,6 +50,7 @@
   </script>
 
   <script>
+
     // get the slider value
     function getNumber() {
       let input = document.getElementById("userInput").value;
@@ -101,12 +102,24 @@
         }
       }
 
+   
       // pull out the first n values from the shuffled array and display as ordered list
       shuffleArray(all_exercises);
+      var exercises = [];
       all_exercises.slice(0, n).forEach(e => {
+        exercises.push(e);
         exercises.innerHTML = exercises.innerHTML + '<li>' + e + '</li>';
       });
     }
+
+    function reshuffle () {
+        document.getElementById("exercises").innerHTML = "";
+        shuffleArray(exercises);
+        exercises.forEach(e => {
+        exercises.innerHTML = exercises.innerHTML + '<li>' + e + '</li>';
+      })
+    }
+
   </script>
 </head>
 
@@ -118,6 +131,9 @@
         oninput="numberOutputId.value = userInput.value">
       <p>
         <button class="btn" onclick="myFunction()">Create new workout </button>
+      </p>
+      <p>
+        <button class="btn" onclick="reshuffle()">reshuffle </button>
       </p>
     </div>
     <ol id="exercises"></ol>
