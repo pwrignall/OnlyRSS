@@ -83,7 +83,7 @@ body {
 @media screen and (min-width: 768px) {
   html {
     font-size: 105%;
-    line-height: 2;
+    line-height: 2.1;
   }
 
   article,
@@ -135,19 +135,18 @@ body {
   background-color: #ffffff;
 }
 
+
 article,
 main,
 aside {
   background-color: #ffffff;
   border-radius: var(--radius);
-  border: 1px solid LightGrey;
   max-width: var(--pagewidth);
-  /* margin: auto; */
+  margin: auto;
+  border: 1px solid LightGrey;
   box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%);
-  /* margin-bottom: 20px; */
+  margin-bottom: 20px;
   padding-top: 0px;
-  /* margin-left: 10px;
-  margin-right: 10px; */
 }
 
 /* padding so top of content is below fixed global nav */
@@ -170,7 +169,9 @@ aside {
     TYPOGRAPHY IMAGES and TLDR
     ====================== */
 
-/* Paragraphs */
+header {
+  text-align: center;
+}
 
 p {
   margin: 1.4em 0px;
@@ -200,10 +201,22 @@ h1 {
   color: var(--accent);
 }
 
-h2 {
-  font-size: 1.8rem;
+.header2 h2 {
+  font-size: 1.6rem;
   color: var(--accent);
+  display: inline;
+  background-color: #ffffff;
+  padding: 10px;
+  text-transform: uppercase;
 }
+
+.header2 {
+  border-bottom: 1px solid var(--accent);
+  height: 1rem;
+  margin: 4rem 0 2.5rem 0;
+  text-align: center;
+}
+
 
 h3 {
   font-size: 1.4rem;
@@ -315,7 +328,6 @@ li::marker {
 .pubdate {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 0.85rem;
-  border-bottom: 1px solid var(--accent);
   margin-bottom: 20px;
   padding-bottom: 10px;
 }
@@ -421,18 +433,6 @@ nav {
   /* this is required as fixed items (like the nav) ignore the containers padding/margin) */
   left: var(--viewport-padding);
   right: var(--viewport-padding);
-}
-
-article,
-main,
-aside {
-  background-color: #ffffff;
-  border-radius: var(--radius);
-  border: 1px solid LightGrey;
-  max-width: var(--pagewidth);
-  margin: auto;
-  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%);
-  margin-bottom: 20px;
 }
 
 nav a {

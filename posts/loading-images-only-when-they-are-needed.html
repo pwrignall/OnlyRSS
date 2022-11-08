@@ -100,7 +100,9 @@
 
       <!--introduction-->
       <section>
+        <div class="header2">
         <h2>Background</h2>
+        </div>
         <p>
           I recently created a <a href="/pages/subscribe.html">subscribe</a> page (which can be reached from the RSS link on the homepage). The aim was to create an easy way for users to copy the RSS feed URL (previously the link simply opened the RSS feed, which many users might have found confusing), and also gives some basic instructions on how to subscribe to OnlyRSS via two popular RSS aggregators i.e. Feedly and Inoreader. The Feedly and Inoreader instructions are both displayed as ordered lists, but I also wanted to include an animated GIF showing the subscription process for each app.
         </p>
@@ -108,7 +110,9 @@
 
       <!--The problem-->
       <section>
+        <div class="header2">
         <h2>The problem</h2>
+        </div>
         <p>
           The problem I encountered was that each GIF was quite large (both in terms of page real estate and file size) and users who are already familiar with RSS probably wouldn’t need to view the animations at could be considered complementary to the ordered lists, furthermore, it’s unlikely that a user would want to view the animation for both Feedly and Inoreader.
         </p>
@@ -122,7 +126,9 @@
 
       <!--The solution-->
       <section>
+        <div class="header2">
         <h2>The solution</h2>
+        </div>
         <p>
           I’ve already used a non-JS method for hiding content until it’s requested by the user on the <a href="/pages/changelog.html">Changelog</a> page i.e. the
           <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary">&lt;details&gt; and &lt;summary&gt; HTML elements</a>. So I decided to use these elements with the summary text of 'Show me how', which when clicked would display the contents of the &lt;details&gt; element i.e. the animated GIF. You can see this in action for a static image by clicking on the text below to display Figure 1.
@@ -160,7 +166,9 @@
 
       <!--Conclusion-->
       <section>
+        <div class="header2">
         <h2>Conclusions</h2>
+        </div>
         <p>
           The solution I’ve described above is probably suitable for instructional pages where the reader would only be interested in one of many options e.g. Those explanation pages that show you how to perform some complex tasks in Excel but give you four versions of the solution, one for each recent version of Excel. In that type of scenario, hiding and delaying the load of any associated images makes a lot of sense, it condenses the page (so it looks more appealing) and improves page performance.
         </p>
@@ -171,7 +179,9 @@
 
       <!-- feedback - section -->
       <section>
-        <h2>Feedback</h2>
+        <div class="header2">
+        <h2>Feedback <i>&</i> sharing</h2>
+        </div>
         <p>
           If you have any comments on this article then please get in touch via Twitter (<a href="https://twitter.com/dbs_sticky" target="_blank">@dbs_sticky</a
           >).
@@ -193,14 +203,18 @@
     <aside>
       <h1>related articles</h1>
       <a href="/posts/drop-caps-and-indents.html">
+        <div class="header2">
         <h2>Drop caps and indents</h2>
+        </div>
         <p>
           A niche & nerdy look at how paragraphs can be visually distinguished using a little CSS.
         </p>
       </a>
 
       <a href="/posts/auto-numbering-of-figures-with-CSS-counters.html">
+        <div class="header2">
         <h2>Automatically numbering figures using CSS Counters</h2>
+        </div>
         <p>
           Automatically number figures with CSS counters and display inside the figure’s caption.
         </p>

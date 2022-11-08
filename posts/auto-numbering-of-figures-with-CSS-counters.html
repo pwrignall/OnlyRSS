@@ -100,7 +100,9 @@
 
       <!--introduction-->
       <section>
+        <div class="header2">
         <h2>Background</h2>
+        </div>
         <p>
           For the first 13&nbsp;years of my career I worked as a research scientist for the Defence Evaluation and Research Agency (<a href="https://en.wikipedia.org/wiki/Defence_Evaluation_and_Research_Agency">DERA</a>, an agency of the UK’s MoD). I worked on 3–5&nbsp;year projects covering a wide range of subjects. Even though the projects varied, they did all have one thing in common, i.e. one of the deliverables was always a report, and much like the <a href="https://youtu.be/Fy3rjQGc6lA">infamous TPS reports from Office Space</a>, the DERA reports also had to adhere to a strict format.
         </p>
@@ -117,7 +119,9 @@
 
       <!--heading-->
       <section>
+        <div class="header2">
         <h2>Solution</h2>
+        </div>
         <p>
           There’s no solution for this in HTML/CSS that’s as convenient as the numbering and cross-referencing that’s part of <a href="https://support.microsoft.com/en-us/office/create-a-cross-reference-300b208c-e45a-487a-880b-a02767d9774b">Microsoft Word</a>, but, there is a CSS solution that can at least handle the numbering part (but not the cross-referencing), and that solution is based on CSS Counters.
         </p>
@@ -145,7 +149,9 @@
         </p>
         <pre><code>figcaption::before {content: 'Figure ' counter(figures) '. ';}</code></pre>
 
+        <div class="header2">
         <h2>Implementation example</h2>
+        </div>
         <p>
           The code below shows the CSS used on OnlyRSS.org to display figcaptions, and the HTML used to generate figures 1 & 2.
         </p>
@@ -170,7 +176,9 @@
 
       <!--Issues-->
       <section>
+        <div class="header2">
         <h2>Issues with this solution</h2>
+        </div>
         <p>
           Although the solution described above provides an easy method for automatically numbering figures within a page (actually, across all figures on a site that share the same style sheet,) it does have a few drawbacks:
         </p>
@@ -193,7 +201,9 @@
 
       <!-- feedback - section -->
       <section>
-        <h2>Feedback</h2>
+        <div class="header2">
+        <h2>Feedback <i>&</i> sharing</h2>
+        </div>
         <p>
           If you have any comments on this article then please get in touch via Twitter (<a href="https://twitter.com/dbs_sticky" target="_blank">@dbs_sticky</a>).
         </p>
@@ -214,13 +224,17 @@
     <aside>
       <h1>related articles</h1>
       <a href="/posts/drop-caps-and-indents.html">
+        <div class="header2">
         <h2>Drop caps and indents</h2>
+        </div>
         <p>
           A niche & nerdy look at how paragraphs can be visually distinguished using a little CSS.
         </p>
       </a>
       <a href="/posts/loading-images-only-when-they-are-needed.html">
+        <div class="header2">
         <h2>Loading images only when (or if) they are needed</h2>
+        </div>
         <p>
           Using the Details & Summary elements with lazy loading to load and display images only when/if they’re requested.
         </p>

@@ -100,7 +100,9 @@
 
       <!--the problem-->
       <section>
+        <div class="header2">
         <h2>Stacked bar charts</h2>
+        </div>
         <p>
           For the purpose of this article I’m going to be using a real world example, specifically a stacked bar chart designed to show the number of aircraft of each type e.g 737-800, A320-200 etc. in an Airline’s fleet, categorised by the aircraft status i.e. In Service, On Order, and Storage. This ‘fleet breakdown by type and status’ is essential when trying to understand the composition of an airline’s fleet.
         </p>
@@ -124,7 +126,9 @@
           <li>Compare (but not easily) the number of On Order and Storage aircraft across the different aircraft types.</li>
         </ol>
 
+        <div class="header2">
         <h2>The problem with stacked bar charts</h2>
+        </div>
         <p>
           The main problem with the list above is №5. Although it’s possible to compare the number of On Order and Storage aircraft across the aircraft types, it’s not easy to do this comparison well. The In Service category is on the far left i.e., it touches the chart’s baseline, whereas the other statuses typically don’t. For example, which aircraft type in in the chart above [<span class="fig-ref">fig.&nbsp;1</span>] includes the highest number of Storage aircraft? It’s like trying to compare the height of individuals in a group when everyone is standing on a box of different height.
         </p>
@@ -132,7 +136,9 @@
 
       <!--possible solutions-->
       <section>
+        <div class="header2">
         <h2>Possible solutions</h2>
+        </div>
         <h3>Filtering</h3>
         <p>
           This stacked bar chart was taken from an online application that includes the ability to filter by status. So one solution is for the user to filter the data by the status of interest. e.g. On Order. This would make the chart far simpler (it would no longer be a “stacked” bar chart), and make a comparison of the number of On Order aircraft across the aircraft types very easy, but, you’d lose the context e.g., is the number of On Order large or small compared to the number of In Service?
@@ -160,7 +166,9 @@
 
       <!--our chosen solution-->
       <section>
+        <div class="header2">
         <h2>Linking a data table to its associated stacked bar chart</h2>
+        </div>
         <p>
           In the animation below [<span class="fig-ref">fig.&nbsp;3</span>], each table column header is selected in-turn by the user to be sorted i.e. Total, Storage, On Order, and In Service. When a specific status in the table has been sorted (or “prioritised” by the user), the stacked bar chart is adjusted accordingly i.e.:
         </p>
@@ -188,7 +196,9 @@
 
         <!--conclusion-->      
       <section>
+        <div class="header2">
         <h2>Conclusion</h2>
+        </div>
         <p>
           The solution described above, and which we implement on Cirium’s Airline Profiles is not perfect (the colours specifically need to change), but I do feel that the solution does go some way to overcoming one of the issues with stacked bar charts. I wouldn’t describe this feature as essential, but I’d like to think that it’s one of those “micro-interactions” that might bring a small moment of delight to some of our users.
         </p>
@@ -196,7 +206,9 @@
 
       <!-- feedback - section -->
       <section>
-        <h2>Feedback</h2>
+        <div class="header2">
+        <h2>Feedback <i>&</i> sharing</h2>
+        </div>
         <p>
           If you have any comments on this article then please get in touch via Twitter (<a href="https://twitter.com/dbs_sticky" target="_blank">@dbs_sticky</a>).
         </p>
