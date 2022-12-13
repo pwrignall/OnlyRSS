@@ -198,6 +198,18 @@ body {
   .card-container {
     height: 400px;
   }
+}
+
+/* set size for >1366px  */
+@media screen and (min-width: 1366px) {
+  figcaption {
+    counter-increment: figures; /* count the number of fig captions */
+    border-top: 2px solid var(--accent);
+    position: absolute;
+    top: 0px;
+    left: 850px;
+    width: 13rem;
+  }
 
 }
 
@@ -215,16 +227,11 @@ article,
 main,
 aside {
   background-color: #ffffff;
-  border-radius: var(--radius);
-  border: 1px solid LightGrey;
   max-width: var(--pagewidth);
-  /* margin: auto; */
-  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%);
-  /* margin-bottom: 20px; */
+  margin: auto;
   padding-top: 0px;
-  /* margin-left: 10px;
-  margin-right: 10px; */
 }
+
 
 /* padding so top of content is below fixed global nav */
 header + article,
@@ -386,6 +393,7 @@ li::marker {
 figure {
   margin: 0;
   margin-bottom: 15px;
+  position: relative;
 }
 
 /* for use when referencing a figure i.e. ...in image below [<span class="fig-ref">fig. 1</span>] */
@@ -393,6 +401,7 @@ figure {
   font-size: smaller;
   font-style: italic;
 }
+
 
 figcaption {
   counter-increment: figures; /* count the number of fig captions */
@@ -549,18 +558,6 @@ nav {
 /* this forces all elements to the right of the Home button to move to the far-right */
 nav li:first-child {
   margin-right: auto;
-}
-
-article,
-main,
-aside {
-  background-color: #ffffff;
-  border-radius: var(--radius);
-  border: 1px solid LightGrey;
-  max-width: var(--pagewidth);
-  margin: auto;
-  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%);
-  margin-bottom: 20px;
 }
 
 nav a {
